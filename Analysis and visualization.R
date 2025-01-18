@@ -10,7 +10,7 @@ library(grid)
 library(officer)
 
 ####load data from SSA (Jan 2020 to Dec 2024)####
-df <- readxl::read_excel("D:\\R project\\war\\Data_202001-202412.xlsx")
+df <- readxl::read_excel("WHO_Attacks_on_Healthcare_Data_2020_2024.xlsx")
 
 ####group the conflict by region####
 attack_counts <- df %>%
@@ -92,7 +92,7 @@ for (conflict in names(result_tables)) {
 }
 table(df_subset$attack_type)
 
-####Figure A####
+####Figure B####
 df$conflict <- ifelse(df$conflict=="Arab–Israeli", "Arab–Israeli", ifelse(df$conflict=="Russo-Ukrainian", "Russo-Ukrainian",ifelse(df$conflict=="Myanmar", "Myanmar","Other regions")))
 # df <- df[df$conflict == "Arab–Israeli conflict"|df$conflict == "Russo-Ukrainian war"|df$conflict == "Myanmar conflict",]
 # convert attack_date to date format
@@ -219,7 +219,7 @@ p_final <- ggplot() +
 print(p_final)
 
 #extract plot
-png(file = 'D:\\R project\\war\\plot\\cumulative_total_injured_death.png',
+png(file = 'Global Overview of Attacks on Healthcare Systems between 2020 and 2024 B.png',
     width = 4800,
     height = 2400,
     units = "px",
@@ -228,8 +228,8 @@ png(file = 'D:\\R project\\war\\plot\\cumulative_total_injured_death.png',
 print(p_final)
 dev.off()
 
-####Figure B####
-df <- readxl::read_excel("D:\\R project\\war\\Data_202001-202412.xlsx")
+####Figure A####
+df <- readxl::read_excel("WHO_Attacks_on_Healthcare_Data_2020_2024.xlsx")
 df <- df %>%
   mutate(conflict = case_when(
     `Country / Territory` %in% c("Israel", "Lebanon", "occupied Palestinian territory") ~ "Arab–Israeli",
@@ -338,7 +338,7 @@ df_summary <- df_summary %>%
   )
 
 #extract plot
-png("D:\\R project\\war\\plot\\treemap.png", width = 4800, height = 2400, res = 180)
+png("Global Overview of Attacks on Healthcare Systems between 2020 and 2024 A.png", width = 4800, height = 2400, res = 180)
 
 df_summary$custom_labels_year <- ifelse(
   df_summary$conflict %in% c("Arab–Israeli", "Russo-Ukrainian", "Myanmar"),
