@@ -1,2 +1,2 @@
 # Attacks-against-Healthcare-Systems-in-Conflicted-Regions-Worldwide
-Attacks against Healthcare Systems in Conflicted Regions Worldwide (2020–2024): Overview, Impacts, and Pathways to Resolution
+This analysis project investigates the alarming rise in attacks on healthcare systems in conflict-affected regions from 2020 to 2024. With over 6,000 reported incidents during this period, this study provides an updated overview of the assaults, exploring the significant disruptions they cause to healthcare infrastructure, service delivery, and personnel.
