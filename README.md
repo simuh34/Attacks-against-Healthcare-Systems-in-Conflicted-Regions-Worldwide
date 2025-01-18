@@ -7,3 +7,4 @@ We investigates the alarming rise in attacks on healthcare systems in conflict-a
 
 ## Scripts Descriptions
 The accompanying file 'Analysis and visualization' outlines the methodology used to process, analyze, and visualize the data for this project.
+The dataset "WHO_Attacks_on_Healthcare_Data_2020_2024.csv" contains the data used for analysis in this project, detailing attacks on healthcare systems in conflict-affected regions worldwide, reported between 2020 and 2024.
