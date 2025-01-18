@@ -6,5 +6,5 @@ We investigates the alarming rise in attacks on healthcare systems in conflict-a
 - Dataset: Data from the WHO’s Surveillance System for Attacks on Health Care (SSA). The full dataset can be downloaded from https://extranet.who.int/ssa/LeftMenu/Index.aspx
 
 ## Scripts Descriptions
-The accompanying file 'Analysis and visualization' outlines the methodology used to process, analyze, and visualize the data for this project.
-The dataset "WHO_Attacks_on_Healthcare_Data_2020_2024.csv" contains the data used for analysis in this project, detailing attacks on healthcare systems in conflict-affected regions worldwide, reported between 2020 and 2024.
+- The accompanying file 'Analysis and visualization' outlines the methodology used to process, analyze, and visualize the data for this project.
+- The dataset "WHO_Attacks_on_Healthcare_Data_2020_2024.csv" contains the data used for analysis in this project, detailing attacks on healthcare systems in conflict-affected regions worldwide, reported between 2020 and 2024.
